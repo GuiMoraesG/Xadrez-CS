@@ -1,0 +1,10 @@
+
+*.vsidx
+*.pdb
+*.suo
+*.exe
+*.config
+*.cache
+*.txt
+*.csproj
+*.sln
