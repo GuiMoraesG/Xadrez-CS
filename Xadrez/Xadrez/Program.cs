@@ -1,5 +1,6 @@
 ﻿using System;
 using Xadrez.tabuleiro;
+using Xadrez.xadrez;
 
 namespace Xadrez
 {
@@ -11,9 +12,11 @@ namespace Xadrez
 
             tab = new Tabuleiro(8, 8);
 
-            Tela.ImprimirTabuleiro(tab);
+            tab.AdicionarPeca(new Torre(tab, Cor.Preta) , new Posicao(0, 0));
+            tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(2, 4));
+            tab.AdicionarPeca(new Rei(tab, Cor.Branca), new Posicao(5, 5));
 
-            Console.ReadLine();
+            Tela.ImprimirTabuleiro(tab);
         }
     }
 }
