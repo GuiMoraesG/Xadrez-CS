@@ -8,15 +8,22 @@ namespace Xadrez
     {
         static void Main(string[] args)
         {
-            Tabuleiro tab;
+            try
+            {
+                Tabuleiro tab;
 
-            tab = new Tabuleiro(8, 8);
+                tab = new Tabuleiro(8, 8);
 
-            tab.AdicionarPeca(new Torre(tab, Cor.Preta) , new Posicao(0, 0));
-            tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(2, 4));
-            tab.AdicionarPeca(new Rei(tab, Cor.Branca), new Posicao(5, 5));
+                tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+                tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(2, 8));
+                tab.AdicionarPeca(new Rei(tab, Cor.Branca), new Posicao(0, 2));
 
-            Tela.ImprimirTabuleiro(tab);
+                Tela.ImprimirTabuleiro(tab);
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
