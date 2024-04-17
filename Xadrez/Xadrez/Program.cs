@@ -10,15 +10,13 @@ namespace Xadrez
         {
             try
             {
-                Tabuleiro tab;
+                PosicaoXadrez posX;
 
-                tab = new Tabuleiro(8, 8);
+                posX = new PosicaoXadrez('a', 1);
 
-                tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                tab.AdicionarPeca(new Torre(tab, Cor.Preta), new Posicao(2, 8));
-                tab.AdicionarPeca(new Rei(tab, Cor.Branca), new Posicao(0, 2));
+                Console.WriteLine(posX);
 
-                Tela.ImprimirTabuleiro(tab);
+                Console.WriteLine(posX.toPosicao());
             }
             catch (Exception ex) 
             {
