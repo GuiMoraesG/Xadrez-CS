@@ -26,6 +26,7 @@ namespace Xadrez
                     Console.Clear();
                     Tela.ImprimirTabuleiro(partida.Tab, possicoesPossiveis);
 
+                    Console.WriteLine();
                     Console.Write("Destino: ");
                     Posicao destino = Tela.LerPosicaoXadrez().toPosicao();
 
