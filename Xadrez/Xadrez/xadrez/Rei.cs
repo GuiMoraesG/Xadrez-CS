@@ -115,7 +115,7 @@ namespace Xadrez.xadrez
 
                     if (Tab.Peca(p1) == null && Tab.Peca(p2) == null && Tab.Peca(p3) == null)
                     {
-                        mat[Posicao.Linha, Posicao.Coluna + 2] = true;
+                        mat[Posicao.Linha, Posicao.Coluna - 2] = true;
                     }
                 }
 
