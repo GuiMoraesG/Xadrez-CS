@@ -31,7 +31,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna);
+                pos.DefinirValores(pos.Linha - 1, pos.Coluna);
             }
 
             //Diagonal Superior Direito
@@ -45,7 +45,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
+                pos.DefinirValores(pos.Linha - 1, pos.Coluna + 1);
             }
 
             //Direita
@@ -59,7 +59,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha, Posicao.Coluna + 1);
+                pos.DefinirValores(pos.Linha, pos.Coluna + 1);
             }
 
             //Diagonal Inferior Direito
@@ -73,7 +73,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
+                pos.DefinirValores(pos.Linha + 1, pos.Coluna + 1);
             }
 
             //Baixo
@@ -87,7 +87,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna);
+                pos.DefinirValores(pos.Linha + 1, pos.Coluna);
             }
 
             //Diagonal Inferior Esquerada
@@ -101,7 +101,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
+                pos.DefinirValores(pos.Linha + 1, pos.Coluna - 1);
             }
 
             //Esquerda
@@ -115,7 +115,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha, Posicao.Coluna - 1);
+                pos.DefinirValores(pos.Linha, pos.Coluna - 1);
             }
 
             //Diagonal Superior Esquerda
@@ -129,7 +129,7 @@ namespace Xadrez.xadrez
                     break;
                 }
 
-                pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
+                pos.DefinirValores(pos.Linha - 1, pos.Coluna - 1);
             }
 
             return mat;
