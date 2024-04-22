@@ -35,8 +35,6 @@ namespace Xadrez
                         partida.ValidarPosicaoDestino(origem, destino);
 
                         partida.RealizaJogada(origem, destino);
-
-                        Console.WriteLine("OI");
                     }
                     catch (TabuleiroException ex)
                     {
